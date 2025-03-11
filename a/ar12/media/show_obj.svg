@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#010202;stroke:#010202;}
+</style>
+<circle class="st0" cx="256" cy="256" r="243.53"/>
+<g id="SVGRepo_iconCarrier">
+	<path class="st1" d="M182.81,329.32c0.09-43.25,29.19-81.05,70.98-92.19l-47.35-123.36c-1.97-5.19-7.77-7.8-12.97-5.83
+		c-2.69,1.02-4.81,3.14-5.83,5.83L96.55,350.63c-2,5.18,0.58,11,5.76,13c1.15,0.44,2.36,0.67,3.59,0.67h83.65
+		C185.11,353.17,182.83,341.3,182.81,329.32z"/>
+	<path class="st1" d="M397.45,184.15H276.81c-5.55,0-10.05,4.5-10.05,10.05v40.21c51.93-6.7,99.46,29.97,106.16,81.9
+		c0.37,2.85,0.61,5.72,0.71,8.59h23.83c5.55,0,10.05-4.5,10.05-10.05V194.2C407.51,188.65,403,184.15,397.45,184.15z"/>
+	<circle class="st1" cx="278.32" cy="329.32" r="75.4"/>
+</g>
+</svg>

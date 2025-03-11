@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on 10/03/2025 at 12:05 AM by All in One SEO v4.8.0 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on 11/03/2025 at 11:10 PM by All in One SEO v4.8.0 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=page"?>
 <urlset
@@ -9,16 +9,16 @@
 >
 	<url>
 		<loc><![CDATA[/]]></loc>
-		<lastmod><![CDATA[2024-12-16T17:59:24+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-03-11T10:56:22+00:00]]></lastmod>
 		<changefreq><![CDATA[always]]></changefreq>
 		<priority><![CDATA[1]]></priority>
 		<image:image>
-			<image:loc><![CDATA[https://abd3d.design/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
+			<image:loc><![CDATA[/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/image_/]]></loc>
-		<lastmod><![CDATA[2025-01-31T15:22:55+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-03-11T17:38:50+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>
@@ -27,7 +27,7 @@
 	</url>
 	<url>
 		<loc><![CDATA[/images/]]></loc>
-		<lastmod><![CDATA[2025-01-31T15:21:14+00:00]]></lastmod>
+		<lastmod><![CDATA[2025-03-11T17:35:32+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
 		<image:image>

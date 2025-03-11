@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bed Table</title>
+    <link rel="icon" href="media/ar.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .column {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10001;
+            position: relative;
+        }
+
+        #left-column {
+            padding-left: 20px;
+            align-items: flex-start;
+            display: none;
+        }
+
+        #right-column {
+            padding-right: 20px;
+            align-items: flex-end;
+            display: none;
+        }
+
+        .button-label {
+            color: white;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-right: 10px;
+            white-space: nowrap;
+            opacity: 0;
+            font-family: 'Outfit', bold;
+            animation: fadeInOut 5s ease-in-out forwards;
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .image-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .image-button:hover {
+            filter: drop-shadow(0px 0px 5px rgb(0, 81, 255));
+        }
+
+        .image-button:active {
+            transform: scale(0.8);
+        }
+
+        .fullscreen-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            display: none;
+            z-index: 10000;
+        }
+
+        .fullscreen-button:hover {
+            filter: drop-shadow(0px 0px 5px rgb(0, 81, 255));
+        }
+
+
+        .ar-button {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 50px;
+            width: 200px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            display: none;
+            z-index: 10002;
+        }
+
+        .warning-center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 10003;
+        }
+
+        #warning_ar_unavailable {
+            width: 242px;
+            background-image: url('media/warning_AR_unavailable.png');
+            display: none;
+        }
+
+        #warning_could_not_enter_ar {
+            width: 362px;
+            background-image: url('media/warning_could_not_enter_AR.png');
+            display: none;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            #left-column {
+                padding-left: 10px;
+            }
+
+            #right-column {
+                padding-right: 10px;
+            }
+
+            .image-button {
+                width: 40px;
+                height: 40px;
+            }
+
+            .button-label {
+                font-size: 12px;
+            }
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            20%,
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #object_button {
+            background-image: url('media/hide_obj.svg');
+        }
+
+        #explode_button {
+            background-image: url('media/explode.svg');
+        }
+
+        #ar_button {
+            background-image: url('media/ar.svg');
+        }
+
+        #w_1_button {
+            background-image: url('media/w_1.png');
+        }
+
+        #w_2_button {
+            background-image: url('media/w_2.png');
+        }
+
+        #w_3_button {
+            background-image: url('media/w_3.png');
+        }
+
+        #w_4_button {
+            background-image: url('media/w_4.png');
+        }
+
+        #enter_ar_button {
+            background-image: url('media/enter_AR_button.png');
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="column" id="left-column">
+        <div class="button-container">
+            <button class="image-button" id="object_button"></button>
+            <span class="button-label">Hide/View Extra</span>
+        </div>
+        <div class="button-container">
+            <button class="image-button" id="explode_button"></button>
+            <span class="button-label">Explode mode</span>
+        </div>
+        <div class="button-container">
+            <button class="image-button" id="ar_button"></button>
+            <span class="button-label">AR view</span>
+        </div>
+    </div>
+
+    <div class="column" id="right-column">
+        <div class="button-container">
+            <span class="button-label">Oak wood</span>
+            <button class="image-button" id="w_1_button"></button>
+        </div>
+        <div class="button-container">
+            <span class="button-label">Clear wood</span>
+            <button class="image-button" id="w_2_button"></button>
+        </div>
+        <div class="button-container">
+            <span class="button-label">Dark Wood</span>
+            <button class="image-button" id="w_3_button"></button>
+        </div>
+        <div class="button-container">
+            <span class="button-label">Black Wood</span>
+            <button class="image-button" id="w_4_button"></button>
+        </div>
+    </div>
+
+    <iframe src="Bed_table.html" allowfullscreen sandbox="allow-scripts allow-same-origin"></iframe>
+    <button class="fullscreen-button" id="fullscreenButton"></button>
+
+    <button class="ar-button" id="enter_AR_button"></button>
+
+    <button class="warning-center" id="warning_AR_unavailable"></button>
+    <button class="warning-center" id="warning_could_not_enter_AR"></button>
+
+    <script>
+        const fullscreenButton = document.getElementById('fullscreenButton');
+        const leftColumn = document.getElementById('left-column');
+        const rightColumn = document.getElementById('right-column');
+        const labels = document.querySelectorAll('.button-label');
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().then(() => {
+                    fullscreenButton.style.backgroundImage = "url('media/fullscreen_close.svg')";
+                }).catch(err => {
+                    console.error(`Error attempting to enable fullscreen mode: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen().then(() => {
+                    fullscreenButton.style.backgroundImage = "url('media/fullscreen_open.svg')";
+                }).catch(err => {
+                    console.error(`Error attempting to exit fullscreen mode: ${err.message}`);
+                });
+            }
+        }
+
+        fullscreenButton.addEventListener('click', toggleFullscreen);
+
+        fullscreenButton.style.backgroundImage = "url('media/fullscreen_open.svg')";
+
+        // Function to start animations
+
+        function startAnimations() {
+            // Ensure animation is applied
+
+            labels.forEach(label => {
+                label.style.animation = 'fadeInOut 5s ease-in-out forwards';
+            });
+        }
+
+        // Function to handle the visibility change
+
+        function handleColumnVisibility() {
+
+            // Set up MutationObserver to monitor changes
+
+            const observer = new MutationObserver(() => {
+
+                if (leftColumn.style.display === 'flex' || rightColumn.style.display === 'flex') {
+
+                    startAnimations();
+
+                }
+
+            });
+
+
+
+            // Observe changes to the 'style' attribute
+
+            observer.observe(leftColumn, { attributes: true, attributeFilter: ['style'] });
+
+            observer.observe(rightColumn, { attributes: true, attributeFilter: ['style'] });
+
+        }
+
+
+
+        // Start observing after the page has loaded
+
+        document.addEventListener('DOMContentLoaded', handleColumnVisibility);
+
+    </script>
+
+</body>
+
+</html>
