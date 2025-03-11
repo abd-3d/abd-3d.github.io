@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was dynamically generated on 10/03/2025 at 12:05 AM by All in One SEO v4.8.0 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="/default-sitemap.xsl?sitemap=page"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+	<url>
+		<loc><![CDATA[/]]></loc>
+		<lastmod><![CDATA[2024-12-16T17:59:24+00:00]]></lastmod>
+		<changefreq><![CDATA[always]]></changefreq>
+		<priority><![CDATA[1]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://abd3d.design/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/image_/]]></loc>
+		<lastmod><![CDATA[2025-01-31T15:22:55+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://abd3d.design/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/images/]]></loc>
+		<lastmod><![CDATA[2025-01-31T15:21:14+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://abd3d.design/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/3d-portfolio/]]></loc>
+		<lastmod><![CDATA[2024-12-30T18:04:42+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://abd3d.design/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/videos/]]></loc>
+		<lastmod><![CDATA[2024-12-05T13:49:01+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[https://abd3d.design/wp-content/uploads/2024/06/ar2.jpg]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/404error/]]></loc>
+		<lastmod><![CDATA[2024-06-07T10:00:06+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[http://localhost/mywebsite/wp-content/uploads/2024/06/4042.png]]></image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc><![CDATA[/79-2/]]></loc>
+		<lastmod><![CDATA[2024-05-19T09:47:50+00:00]]></lastmod>
+		<changefreq><![CDATA[weekly]]></changefreq>
+		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[http://localhost/mywebsite/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost/mywebsite/wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp]]></image:loc>
+		</image:image>
+		<image:image>
+			<image:loc><![CDATA[http://localhost/mywebsite/wp-content/themes/twentytwentyfour/assets/images/windows.webp]]></image:loc>
+		</image:image>
+	</url>
+</urlset>
