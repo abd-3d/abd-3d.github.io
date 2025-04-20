@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            /* Prevent scrolling */
+        }
+
+        .simp_img {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://abd3d.design/a/ar12/media/bed_table.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* No repeat if the image is smaller */
+        }
+
+        .bed_iframe {
+            height: 100vh;
+            width: 100vw;
+            border: none;
+            display: none;
+            /* Hide the iframe initially */
+        }
+
+        .glightbox_video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+        }
+
+        .outer_circle {
+            stroke-width: 3;
+            stroke-dasharray: 410;
+            stroke-dashoffset: 0;
+            stroke-linecap: square;
+            transition: all .4s ease-out;
+        }
+
+        .glightbox_video:hover .outer_circle {
+            stroke-dashoffset: 410;
+            transition: stroke .7s .4s ease-out, stroke-dashoffset .4s ease-out
+        }
+
+        .glightbox_video:hover .inner-circle {
+            fill: #29b1ff;
+            transition: fill .4s .3s ease-out;
+
+        }
+
+        .glightbox_video:hover .play {
+            fill: white;
+            transition: fill .4s .3s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="simp_img"></div>
+    <a href="#" class="glightbox_video" onclick="loadIframe();">
+        <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="inner-circle"
+                d="M65 21C40.1488 21 20 41.1488 20 66C20 90.8512 40.1488 111 65 111C89.8512 111 110 90.8512 110 66C110 41.1488 89.8512 21 65 21Z"
+                fill="white"></path>
+            <circle class="outer_circle" cx="65.5" cy="65.5" r="64" stroke="white"></circle>
+            <path class="play" fill-rule="evenodd" clip-rule="evenodd" d="M60 76V57L77 66.7774L60 76Z" fill="#29b1ff">
+            </path>
+        </svg>
+    </a>
+    <iframe class="bed_iframe" src="about:blank" allowfullscreen sandbox="allow-scripts allow-same-origin"></iframe>
+    <script>
+        function loadIframe() {
+            let bed = document.querySelector('.bed_iframe');
+            let anim = document.querySelector('.glightbox_video');
+            let bac_img = document.querySelector('.simp_img');
+            bed.src = 'https://abd3d.design/a/ar12'; // Set the source of the iframe to load the content
+            anim.style.display = 'none'; // Hide the button after clicking
+            bac_img.style.display = 'none';
+            bed.style.display = 'block'; // Show the iframe
+        }
+    </script>
+</body>
+
+</html>
