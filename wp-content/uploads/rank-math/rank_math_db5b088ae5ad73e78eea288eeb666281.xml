@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://do-b.website/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://do-b.website/post-sitemap.xml</loc>
+		<lastmod>2024-06-12T12:35:32+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://do-b.website/page-sitemap.xml</loc>
+		<lastmod>2024-06-12T11:57:40+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://do-b.website/category-sitemap.xml</loc>
+		<lastmod>2024-06-12T12:35:32+00:00</lastmod>
+	</sitemap>
+</sitemapindex>
